@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+
+# YES/NO QUESTION
+function ask_question() {
+    read -p "${1} (Y/N) " choice
+    case "$choice" in
+        Y | y | Yes | YES | yes ) return 0; exit;;
+        N | n | No | NO | no ) return 1; exit;;
+        * ) return 2;;
+    esac
+}
