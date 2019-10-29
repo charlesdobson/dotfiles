@@ -3,4 +3,4 @@
 
 # NODE
 echo "Installing newest LTS release of Node"
-n lts
+sudo n lts
