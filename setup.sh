@@ -9,3 +9,7 @@ cd ~ # go home
 if [ ! -e ".hushlogin"]; then
     touch .hushlogin
 fi
+
+sh brew/brew.sh
+sh defaults/config.sh
+sh defaults/defaults.sh
