@@ -30,8 +30,9 @@ alias gm="git checkout master"
 
 
 # EASIER DOTFILE EDITING
-alias bashrc="nano ~/.bashrc && . ~/.bashrc"
 alias aliases="nano ~/.aliases && . ~/.aliases"
+alias bashrc="nano ~/.bashrc && . ~/.bashrc"
+alias bashprofile="nano ~/.bash_profile && . ~/.bash_profile"
 
 
 # HELPFUL TERMINAL ALIASES
@@ -41,8 +42,8 @@ alias path='echo -e ${PATH//:/\\n}'
 
 
 # SHOW/HIDE HIDDEN FILES
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias showhidden="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hidehidden="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 
 # SHOW/HIDE DESKTOP ICONS

@@ -35,6 +35,7 @@ echo # newline
 declare -a cask_apps=(
     'bitwarden'
     'chatmate-for-whatsapp'
+    'chatmate-for-facebook'
     'docker'
     'firefox'
     'google-chrome'
