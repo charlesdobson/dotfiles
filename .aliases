@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+
+# Navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+
+# Common directories
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dc="cd ~/Documents"
+alias p="cd "~/Documents/projects"
+alias home="cd ~"
+
+
+# Work repos
+alias cms="cd /Users/charlie/Documents/mappedin/cms"
+alias hyperion="cd /Users/charlie/Documents/mappedin/hyperion"
+
+
+# git
+alias g="git"
+alias gs="git status"
+alias gd="git diff"
+alias gb="git branch"
+alias gm="git checkout master"
+
+
+# Make editing easier
+alias bashrc="nano ~/.bashrc && . ~/.bashrc"
+
+
+# Helpful Terminal aliases
+alias c="clear"
+alias python="python3"
+alias path='echo -e ${PATH//:/\\n}'
+
+
+# Show/Hide Hidden Files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kil$
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && ki$
+
+
+# Show/Hide Desktop Icons
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false &&$
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && $
