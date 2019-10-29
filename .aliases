@@ -12,7 +12,7 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dc="cd ~/Documents"
-alias p="cd "~/Documents/projects"
+alias p="cd ~/Documents/projects"
 alias home="cd ~"
 
 
@@ -31,6 +31,7 @@ alias gm="git checkout master"
 
 # Make editing easier
 alias bashrc="nano ~/.bashrc && . ~/.bashrc"
+alias aliases="nano ~/.aliases && . ~/.aliases"
 
 
 # Helpful Terminal aliases
@@ -40,10 +41,10 @@ alias path='echo -e ${PATH//:/\\n}'
 
 
 # Show/Hide Hidden Files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kil$
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && ki$
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 
 # Show/Hide Desktop Icons
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false &&$
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && $
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
