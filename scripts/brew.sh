@@ -40,9 +40,9 @@ declare -a cask_apps=(
     'firefox'
     'google-chrome'
     'keepingyouawake'
+    'postman'
     'slack'
     'spotify'
-    'tidal'
     'visual-studio-code'
 )
 echo "Installing brew cask apps"
