@@ -12,13 +12,13 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dc="cd ~/Documents"
+alias m="cd ~/Documents/mappedin"
 alias p="cd ~/Documents/projects"
 alias home="cd ~"
 
 
 # WORK DIRECTORIES
-alias cms="cd /Users/charlie/Documents/mappedin/cms"
-alias hyperion="cd /Users/charlie/Documents/mappedin/hyperion"
+alias tri="cd /Users/charlie/Documents/mappedin/tricorder"
 
 
 # GIT
@@ -26,8 +26,10 @@ alias g="git"
 alias gs="git status"
 alias gd="git diff"
 alias gb="git branch"
+alias gc="git checkout"
+alias gp="git push"
 alias gm="git checkout master"
-
+alias gl="git log --graph --all"
 
 # EASIER DOTFILE EDITING
 alias aliases="nano ~/.aliases && . ~/.aliases"
