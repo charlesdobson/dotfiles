@@ -1,19 +1,22 @@
 #!/usr/bin/env bash
 
-
+list=(31 32 33 34 35 36 91 92 93 94 95 96 97 )
 # GIT FUNCTIONS
 git_branch() {
     git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-
-
+col1=${list[$RANDOM % ${#list[@]} ]}
+col2=${list[$RANDOM % ${#list[@]} ]}
+col3=${list[$RANDOM % ${#list[@]} ]}
+col4=${list[$RANDOM % ${#list[@]} ]}
 # TERMINAL PROMPT
-PS1="\[\e[0;93m\]\u\[\e[m\]" # username
+PS1="\[\e[1;($col3)m\]\u\[\e[m\]" # username
 PS1+=" " # space
-PS1+="\[\e[0;95m\]\W\[\e[m\]" # current directory
-PS1+="\[\e[0;92m\]\$(git_branch)\[\e[m\]" # current branch
+PS1+="\[\e[1;($col2)m\]\W\[\e[m\]" # current directory
+PS1+="\[\e[1;($col1)m\]\$(git_branch)\[\e[m\]" # current branch
 PS1+=" " # space
-PS1+=">> " # end prompt
+PS1+="🦄"
+PS1+="\e[1;($col4)m # " # end prompt
 export PS1;
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
