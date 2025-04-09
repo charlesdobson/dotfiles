@@ -6,3 +6,4 @@ export BASH_SILENCE_DEPRECATION_WARNING=1;
 # SETTINGS
 source ~/.aliases
 source ~/.bash_prompt
+eval "$(starship init bash)"
