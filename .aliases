@@ -16,10 +16,10 @@ alias m="cd ~/Documents/mappedin"
 alias p="cd ~/Documents/projects"
 alias home="cd ~"
 
-
-# WORK DIRECTORIES
-alias tri="cd /Users/charlie/Documents/mappedin/tricorder"
-
+# WORK ALIASES
+alias mono="dev cd && cd extensibility"
+alias web="dev cd admin-web"
+alias dpv="dev prod vite"
 
 # GIT
 alias g="git"
@@ -30,6 +30,9 @@ alias gc="git checkout"
 alias gp="git push"
 alias gm="git checkout master"
 alias gl="git log --graph --all"
+
+# GRAPHITE
+alias gms="gt modify && gt submit"
 
 # EASIER DOTFILE EDITING
 alias aliases="nano ~/.aliases && . ~/.aliases"
